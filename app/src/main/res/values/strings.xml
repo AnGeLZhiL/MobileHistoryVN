@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">HistoryVN</string>
+    <string name="history_name">History VN</string>
+    <string name="login">Войти</string>
+    <string name="signup">Зарегистрироваться</string>
+    <string name="signup_underline"><u>Зарегистрироваться</u></string>
+    <string name="signIn">Авторизация</string>
+    <string name="log">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="registrachiya">Регистрация</string>
+    <string name="name">Имя</string>
+    <string name="familiya">Фамилия</string>
+    <string name="otchestvo">Отчество</string>
+    <string name="date_r">Дата рождения</string>
+    <string name="school">Школа</string>
+    <string name="klass">Класс</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="signup_u"><u>Войти в аккаунт</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="profile_name"><b><u>Имя:</u></b></string>
+    <string name="profile_fam"><b><u>Фамилия:</u></b></string>
+    <string name="profile_otch"><b><u>Отчество:</u></b></string>
+    <string name="testsUser">Пройденные тесты:</string>
+    <string name="location"><u><b>Информация:</b></u></string>
+    <string name="question_test"><u><b>Вопрос:</b></u></string>
+    <string name="pocht">Почта</string>
+</resources>
