@@ -1,4 +1,4 @@
-package com.example.apphistoryvn
+package com.example.apphistoryvn.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,6 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.apphistoryvn.common.Global
 import com.example.apphistoryvn.databinding.ActivityAuthorizationBinding
-import com.example.apphistoryvn.databinding.ActivityMainBinding
 import com.example.apphistoryvn.models.userModel
 import org.json.JSONObject
 import java.security.MessageDigest
@@ -71,7 +70,7 @@ class AuthorizationActivity : AppCompatActivity() {
             },
             {
                     error ->
-                Log.e("error", "problem occurred, volley error: " + error.message)
+                Toast.makeText(this,"Пользователь не найден", Toast.LENGTH_LONG).show()
             }
         ) {
             override fun getParams(): MutableMap<String, String> {

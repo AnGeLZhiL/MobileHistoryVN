@@ -14,6 +14,7 @@ import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
 import com.example.apphistoryvn.adapters.categoryAdapter
 import com.example.apphistoryvn.adapters.testAdapter
+import com.example.apphistoryvn.common.Global
 import com.example.apphistoryvn.databinding.FragmentInformationBinding
 import com.example.apphistoryvn.databinding.FragmentProfileBinding
 import com.example.apphistoryvn.databinding.FragmentTestsBinding
@@ -41,6 +42,13 @@ class TestsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val userName = Global.user!!.user_first_name
+        val userFam = Global.user!!.user_second_name
+        val userOtch = Global.user!!.user_midlle_name
+        binding.ratingText.text = Global.user!!.user_rating.toString()
+        binding.fioText.text = userFam + " " + userName.substring(0,1) + "." + userOtch.substring(0,1) + "."
+
         binding.testRecView.layoutManager = LinearLayoutManager(context)
         binding.testRecView.setHasFixedSize(true)
 

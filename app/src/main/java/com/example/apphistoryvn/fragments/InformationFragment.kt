@@ -1,31 +1,21 @@
 package com.example.apphistoryvn.fragments
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.JsonArrayRequest
-import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.example.apphistoryvn.MenuActivity
 import com.example.apphistoryvn.adapters.categoryAdapter
 import com.example.apphistoryvn.common.Global
 import com.example.apphistoryvn.databinding.FragmentInformationBinding
-import com.example.apphistoryvn.models.CategoryViewModel
 import com.example.apphistoryvn.models.categoryModel
-import org.json.JSONArray
-import org.json.JSONObject
-import java.lang.RuntimeException
-import java.util.*
 import kotlin.collections.ArrayList
 
 class InformationFragment : Fragment() {

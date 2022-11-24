@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fon"
-    tools:context=".SignUpActivity">
+    tools:context=".activity.SignUpActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -77,7 +77,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/input"
-                    android:inputType="text"
+                    android:inputType="textCapWords"
                     android:padding="10dp"
                     android:textSize="24sp"/>
 
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/input"
-                    android:inputType="text"
+                    android:inputType="textCapWords"
                     android:padding="10dp"
                     android:textSize="24sp"/>
 
@@ -115,7 +115,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/input"
-                    android:inputType="text"
+                    android:inputType="textCapWords"
                     android:padding="10dp"
                     android:textSize="24sp"/>
 
@@ -218,7 +218,7 @@
                         android:paddingTop="10dp"
                         android:paddingRight="20dp"
                         android:paddingBottom="10dp"
-                        android:text="@string/login"
+                        android:text="@string/signup"
                         android:textColor="@color/beige"
                         android:textSize="23sp" />
 

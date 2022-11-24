@@ -135,15 +135,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="24sp"
+                    android:visibility="visible"
                     android:layout_marginTop="20dp"
                     android:textColor="@color/dark_brown"
                     android:fontFamily="@font/vollkorn_bold"
                     android:text="@string/testsUser" />
 
+                <TextView
+                    android:id="@+id/testUserLable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:textColor="@color/signatures"
+                    android:fontFamily="@font/vollkorn_bold"
+                    android:text="Пока что тут пусто..." />
+
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginHorizontal="15dp"
                 android:id="@+id/recyclerUserTest"
+                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
