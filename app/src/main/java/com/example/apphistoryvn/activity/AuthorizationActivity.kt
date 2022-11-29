@@ -48,8 +48,8 @@ class AuthorizationActivity : AppCompatActivity() {
     private fun SignIn(login: String, password: String) {
         val volleyRequestQueue = Volley.newRequestQueue(this)
         val parameters: MutableMap<String, String> = HashMap()
-        parameters.put("user_login",login);
-        parameters.put("user_password",hashString(password, "SHA-256"));
+        parameters.put("user_login",login)
+        parameters.put("user_password",hashString(password, "SHA-256"))
         val strReq: StringRequest = object : StringRequest(
             Method.POST,
             url,
